@@ -149,6 +149,7 @@
         align-items: center;
         flex-wrap: wrap;
         position: relative;
+        padding-top: 0;
     }
     .menu-toggler{
         display: none;
@@ -157,11 +158,6 @@
         position: absolute;
         top: var(--altura_header);
         height: 0;
-        /*height: 100vh -var(--altura_header);*/
-        /*display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;*/
         overflow: hidden;
         font-size: 5px;
     }
