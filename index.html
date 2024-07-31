@@ -5,17 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Janis Caceres">
     <link rel="stylesheet" href="./assets/styles.css">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gupter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!--ICONS-->
+    <script src="https://kit.fontawesome.com/c8102e27c1.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <section>
+    <section class="container">
         <!--HEADER-->
-        <header>
+        <header class="header" id="home">
             <h1>Fashion Couture</h1>
+            <select class="select-box" name="filter" id="filter">
+              <option value="sort">Ordenar por</option>
+              <option value="brands">Marcas</option>
+              <option value="ambassadors">Embajadores</option>
+              <option value="collections">Colecciones</option>
+              <option value="designers">Diseñadores</option>
+              <option value="year">Año</option>
+            </select>
         </header>
 
         <!--NAVBAR-->
             <nav class="navbar">
+              <div class="logo">
+                <img src="./assets/imgs/fashion2.png" alt="">
+              </div>
                   <div>
                     <label class="toggler" for="toggler">
                       <i class="fa-solid fa-bars fa-2xl"></i>
@@ -29,6 +50,263 @@
                     </ul>
                   </div>
             </nav>
+
+            <!--MAIN-->
+            <main class="core">
+              <section class="content">
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/armani-2024.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title"> Giorgio Armani- <small>2024</small></h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+
+                </div>
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/givenchy-1996.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">Givenchy - <small>1996</small> </h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/givenchy-fall-1995.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">Givenchy - <small>1995</small></h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/hyunjin-versace2.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">Hyunjin (stray Kids) - <small>Versace</small> </h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/versace-1991.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">Versace - <small>1991</small></h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/suga-valentino.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">Suga (BTS) - <small>Valentino</small></h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/AM-2019.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">Alexander McQueen - <small>2019</small> </h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/chanel-1997.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">Chanel - <small>1997</small></h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/AM-2006.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">Alexander McQueen - <small>2006</small></h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/CD-1990.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">Christian Dior - <small>1990</small></h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/CD-1998.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">Christian Dior - <small>1998</small></h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/valentino-1998.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">Valentino - <small>1998</small></h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/balenciaga-1998.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">balenciaga - <small>1998</small></h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/versace1996.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">Versace - <small>1996</small> </h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/valentino-1991.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">Valentino - <small>1991</small></h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/DG-2020.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">Dolce & Gabbana - <small>2020</small></h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/AH-Givenchy.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">Audrey Hepburn - <small>Givenchy</small></h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/jennie-chanel.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">Jennie (BlackPink) - <small>Chanel</small></h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/jisoo-CD.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">Jisoo (BlackPink) - X<small>Chanel</small></h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div>
+                    <img src="./assets/imgs/Jun-Ji-Hyun-AM.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="card-title">Jun Ji-Hyun - <small>Alexander McQueen</small></h2>
+                  </div>
+                  <div>
+                    <button class="card-button">Ver más</button>
+                  </div>
+                </div>
+              </section>
+            </main>
+            <footer class="foot" id="contact">
+              <div>
+                <h3>Contacto</h3>
+                <p>fashioncouture@gmail.com</p>
+                <p><strong>Síguenos en</strong></p>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/voguemagazine/" target="_blank" ><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href="https://www.youtube.com/@Vogue" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
+                <a href="https://x.com/voguemagazine?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+              </div>
+            </footer>
     </section>
 </body>
 </html>

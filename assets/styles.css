@@ -2,3 +2,125 @@
     padding: 0px;
     margin: 0px;
 }
+
+.container{
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 12%  1fr auto;
+    grid-template-areas:
+    "navbar header"
+    "navbar core"
+    "foot core";
+}
+
+/*HEADER*/
+.header{
+    grid-area: header;
+    background-color: black;
+    font-family: "Playfair Display", serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+.select-box{
+    padding: 10px;
+    width: 60%;
+    font-family: "Playfair Display", serif;
+    color: black;
+    font-size: 15px;
+}
+/*NAVBAR*/
+.navbar{
+    grid-area: navbar;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+}
+.navbar img{
+    height: 180px;
+    width: 180px;
+}
+
+.navbar ul{
+    list-style: none;
+    text-align: center;
+}
+.navbar a{
+    color: inherit; 
+    text-decoration: none; 
+    color: white;
+    font-size: 20px;
+    gap: 70px;
+    line-height: 50px;
+}
+.navbar a:hover{
+    background-color: rgb(209, 209, 209);
+    padding: 10px;
+}
+.menu-toggler{
+    color: white;
+    display: none;
+}
+/*MAIN*/
+.core{
+    grid-area: core;
+    background-color: black;
+}
+
+/*CARDS*/
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5fr);
+    height: 90vh;
+    overflow-y: scroll;
+    gap: 20px;
+    padding: 20px;
+    background-color: black;
+}
+.card img{
+    width: 300px;
+    height: auto;
+}
+.card{
+    font-family: "Gupter", serif;
+    color: white;
+    font-size: 13px;
+    font-weight: 200;
+    text-align: center;
+    gap: 20px;
+}
+.card h2{
+    margin-top: 10px;
+}
+.card-button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    font-family: "Gupter", serif;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+/*FOOTER*/
+.foot{
+    grid-area: foot;
+    background-color: black;
+    font-family: "Playfair Display", serif;
+    color: white;
+    text-align: center;
+    font-weight: 200;
+    line-height: 30px;
+}
+.foot i{
+    color: white;
+    padding: 10px;
+}
