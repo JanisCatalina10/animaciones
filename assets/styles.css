@@ -115,15 +115,15 @@
     color: white;
     border: 1px solid gray;
     cursor: pointer;
-    transition-property: background-color, width ;
+    transition-property: background-color ;
     transition-duration: 1.5s;
     transition-timing-function: ease-in-out;
-    
 }
 .card-button:hover{
     background-color: rgb(209, 209, 209);
     width: 100px;
 }
+
 
 /*FOOTER*/
 .foot{
