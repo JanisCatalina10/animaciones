@@ -57,6 +57,7 @@
     font-size: 20px;
     gap: 70px;
     line-height: 50px;
+    transition: 0.5s ease-in-out;
 }
 .navbar a:hover{
     background-color: rgb(209, 209, 209);
@@ -86,6 +87,12 @@
 .card img{
     width: 300px;
     height: auto;
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+}
+.card img:hover{
+    transform: scale(1.2) translate(20px, 20px);
 }
 .card{
     font-family: "Gupter", serif;
@@ -108,6 +115,14 @@
     color: white;
     border: 1px solid gray;
     cursor: pointer;
+    transition-property: background-color, width ;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in-out;
+    
+}
+.card-button:hover{
+    background-color: rgb(209, 209, 209);
+    width: 100px;
 }
 
 /*FOOTER*/
