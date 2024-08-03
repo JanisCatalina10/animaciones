@@ -24,11 +24,18 @@
     padding-bottom: 30px;
 }
 .select-box{
+    appearance: none;
+    margin-top: 10px;
     padding: 10px;
     width: 60%;
     font-family: "Playfair Display", serif;
-    color: black;
+    color: white;
     font-size: 15px;
+    background-color: black;
+    cursor: pointer;
+}
+.box-item{
+    font-size: 17px;
 }
 /*NAVBAR*/
 .navbar{
@@ -63,7 +70,7 @@
 }
 .navbar a:hover{
     background-color: rgb(209, 209, 209);
-    padding: 10px;
+    padding: 15px;
     color:  rgb(255, 146, 202);
 }
 .menu-toggler{
