@@ -117,12 +117,12 @@ h1 {
 /*CARDS*/
 .content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr ;
   grid-template-rows: repeat(5fr);
   height: 90vh;
   overflow-y: scroll;
   gap: 2rem;
-  column-gap: 2.5rem;
+  column-gap: 2.2rem;
   padding: 20px;
   background-color: black;
 }
@@ -134,7 +134,7 @@ h1 {
   cursor: pointer;
 }
 .card img:hover {
-  transform: scale(1.1) translate(20px, 20px);
+  transform: scale(1.2) translate(20px, 20px);
 }
 .card {
   font-family: "Gupter", serif;
