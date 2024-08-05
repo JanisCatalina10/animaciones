@@ -5,7 +5,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: 15% 1fr;
+  grid-template-columns: 12% 1fr;
   grid-template-rows: 12% 1fr auto;
   grid-template-areas:
     "navbar header"
@@ -122,7 +122,7 @@ h1 {
   height: 90vh;
   overflow-y: scroll;
   gap: 2rem;
-  column-gap: 3rem;
+  column-gap: 2.5rem;
   padding: 20px;
   background-color: black;
 }
@@ -134,7 +134,7 @@ h1 {
   cursor: pointer;
 }
 .card img:hover {
-  transform: scale(1.2) translate(20px, 20px);
+  transform: scale(1.1) translate(20px, 20px);
 }
 .card {
   font-family: "Gupter", serif;
