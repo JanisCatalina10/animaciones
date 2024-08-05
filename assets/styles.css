@@ -23,6 +23,29 @@
     padding: 20px;
     padding-bottom: 30px;
 }
+h1{
+    top: 35%;
+    left: 25%;
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #fc87cf, #ef68bb, #493d53, #b6e5f9, #a27dfe, #ff84f1);
+    background-size: 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 15s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
 .select-box{
     appearance: none;
     margin-top: 10px;
@@ -106,6 +129,7 @@
 }
 .card{
     font-family: "Gupter", serif;
+    letter-spacing: 1px;
     color: white;
     font-size: 13px;
     font-weight: 200;
@@ -146,6 +170,8 @@
     text-align: center;
     font-weight: 200;
     line-height: 30px;
+    border: 1px solid  rgb(255, 146, 202);
+    padding: 20px;
 }
 .foot i{
     color:  rgb(255, 146, 202);
